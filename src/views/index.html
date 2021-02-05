@@ -24,35 +24,32 @@
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
         <link rel="stylesheet" href="styles/main.css">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap');
+          </style>
     </head>
     <body>
+      <section class="section-main">
         @@include("../blocks/modules/header/header.html")
-        <header>
-            <div>
-              <img src="../img/logo.svg" alt="Logo">
-              <nav>
-                <ul>
-                  <li><a href="">Наша продукция</a></li>
-                  <li><a href="">О компании</a></li>
-                  <li><a href="">Новинки</a></li>
-                  <li><a href="">Каталог</a></li>
-                  <li><a href="">Доставка</a></li>
-                  <li><a href="">Контакты</a></li>
-                </ul>
-              </nav>
+        <div class="wrapper">
+          <div class="main">
+            <div class="main-text">
+              <div class="title">Здоровая еда - <br><span>это просто</span>!</div>
+              <div class="ml">
+                <p class="main-text__description">Сеть магазинов полезных продуктов питания, производство которых основано на&nbsp;принципах и&nbsp;стандартах органического чистых продуктов</p>
+                <a class="btn" href="" >Перейти в каталог</a>
+              </div>
             </div>
-            <div>
-              <a href="tel:+79453425555">+7 945 342 55 55</a>
-              <div></div>
+            <div class="main-visual">
+              <img src="../img/image-main.png" alt="">
             </div>
-            
-          </header>
+          </div>
+        </div>
+      </section>
+
           <main>
         
           </main>
-          <footer>
-        
-          </footer>
         @@include("../blocks/modules/footer/footer.html")
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>

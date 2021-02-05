@@ -1,0 +1,69 @@
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__tel {
+    color: $gray;
+    transition: 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+.header-cart {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 82px;
+  &__button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $orange;
+    border: none;
+    border-radius: 100%;
+    background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAA3klEQVQokaWSP0vCURSGn2M2lF+hwcEP0CCutTsL0hTo1BzN+k36EO66BoFTBNEgLc1C0fiIcM2f+vuT9MKFe86573vOfe/FXQw5EjVgnNYSuD5WIDYbdQJcRsRFijvATQX/pZ4JZkBXbUXEO9ACbguI58Ap0PvNqO3kxqCspVpT39TX9T5bOFGX6mOFQD81Opxu7YO6KCGHOlc/1Hregfuk3iwQ6Kb6XVGHttX4VM82nP0x5sAo+7w5eI6In5L6P6FeJS8ae9fLzef58JVcePhLfvsRtpgC38BTZR5YAYPx0/z9iCTHAAAAAElFTkSuQmCC");
+    background-size: 1rem 0.87rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__count {
+    position: absolute;
+    top: 6px;
+    left: 9px;
+    font-size: 0.5rem;
+    color: $white;
+  }
+}
+.logo {
+  margin-right: 120px;
+}
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+
+  &-item {
+    margin-right: 48px;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $gray;
+    transition: 0.3s ease;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
