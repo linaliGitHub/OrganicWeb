@@ -34,6 +34,11 @@
       background-repeat: no-repeat;
       background-position: center center;
     }
+    @media (max-width: 360px) {
+      width: 6rem;
+      height: 6rem;
+      background-size: 18px;
+    }
   }
 
   &-menu {
@@ -58,6 +63,12 @@
       background-position: center center;
       margin-left: 20px;
     }
+    @media (max-width: 360px) {
+      width: 6rem;
+      height: 6rem;
+      margin-left: 12px;
+      background-size: 18px;
+    }
   }
 
   @media (max-width: 1440px) {
@@ -71,6 +82,9 @@
 
   @media (max-width: 990px) {
     max-width: 100%;
+  }
+  @media (max-width: 360px) {
+    padding: 16px 15px 34px 15px;
   }
 }
 
@@ -96,6 +110,11 @@
       background-image: url(../../../img/cart-black.svg);
       border: 1px solid $gray;
     }
+    @media (max-width: 360px) {
+      width: 6rem;
+      height: 6rem;
+      background-size: 18px;
+    }
   }
 
   &__count {
@@ -108,6 +127,9 @@
     @media (max-width: 990px) {
       color: $gray;
     }
+    @media (max-width: 360px) {
+      font-size: 1rem;
+    }
   }
 
   @media (max-width: 1440px) {
@@ -116,6 +138,11 @@
 
   @media (max-width: 1200px) {
     margin-left: 20px;
+  }
+  @media (max-width: 360px) {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 12px;
   }
 }
 
@@ -129,6 +156,9 @@
 
   @media (max-width: 1200px) {
     margin-right: 32px;
+  }
+  @media (max-width: 360px) {
+    width: 96px;
   }
 }
 
@@ -166,10 +196,10 @@
   @media (max-width: 990px) {
     z-index: 11;
     position: absolute;
-    display: none;
-    right: -100%;
+    display: block;
+    right: 80%;
+    top: -100%;
     transition: 0.5s ease;
-
   }
 }
 
@@ -178,16 +208,14 @@
     position: absolute;
     z-index: 10;
     background-color: #fff;
-    top: 0;
+    top: -100%;
     width: 100%;
     height: 100vh;
-    right: -100%;
+    right: 0;
     transition: 0.5s ease;
-    display: none;
   }
 }
 .close {
-  display: none;
   &:before {
     width: 20px;
     height: 2px;
@@ -214,8 +242,8 @@
   @media (max-width: 990px){
     position: absolute;
     z-index: 12;
-    top: 30;
-    right: -100%;
+    top: -100%;
+    right: 50px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
