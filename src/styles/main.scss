@@ -968,6 +968,9 @@ body.active {
       flex: 0 0 41%;
     }
   }
+  @media (max-width: 990px) {
+    flex-direction: column;
+  }
 }
 
 .box-form-list {
