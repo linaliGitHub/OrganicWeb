@@ -197,9 +197,13 @@
     z-index: 11;
     position: absolute;
     display: block;
-    right: 80%;
+    right: 36%;
+    font-size: 2rem;
     top: -100%;
     transition: 0.5s ease;
+  }
+  @media (max-width: 360px) {
+    font-size: 3rem;
   }
 }
 
@@ -251,5 +255,8 @@
     transition: 0.6s ease;
     background-color: #fff;
     border: 1px solid $gray;
+  }
+  @media (max-width: 360px) {
+    right: 30px;
   }
 }
