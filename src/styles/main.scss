@@ -103,6 +103,11 @@ body.active {
   &__cucumber {
     top: 0;
     left: 36%;
+    @media (max-width: 990px) {
+      transform: rotate(90deg);
+      bottom: 0;
+      right: 0;
+    }
   }
 
   &__avocado {
@@ -114,9 +119,10 @@ body.active {
       top: 101px;
       width: 129px;
     }
-
-    @media (max-width: 540px) {
-      top: 68px;
+    @media (max-width: 990px) {
+      top: 67px;
+      right: -50px;
+      width: 91px;
     }
   }
 
@@ -127,6 +133,14 @@ body.active {
     @media (max-width:1700px) {
       right: 10px;
     }
+    @media (max-width:990px) {
+      left: -12px;
+      top: 100px;
+      width: 54px;
+    }
+    @media (max-width:360px) {
+      top: 65px;
+    }
   }
 
   &__pepper {
@@ -136,6 +150,11 @@ body.active {
     @media (max-width:1700px) {
       left: -1px;
       top: 50%;
+    }
+    @media (max-width:990px) {
+      left: -5px;
+      top: 38%;
+      width: 33px;
     }
   }
 
